@@ -1,5 +1,5 @@
 #!/bin/bash
 
-set -e
+source ../scripts_ros2/ros2_setup.bash
 
 colcon build --symlink-install
