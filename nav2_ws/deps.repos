@@ -1,4 +1,8 @@
 repositories:
+  navigation2:
+    type: git
+    url: https://github.com/ros-planning/navigation2.git
+    version: humble
   geographic_info:
     type: git
     url: https://github.com/ros-geographic-info/geographic_info.git
@@ -19,7 +23,7 @@ repositories:
     type: git
     url: https://github.com/ros/diagnostics.git
     version: ros2
-  cv_bridge:
+  vision_opencv:
     type: git
     url: https://github.com/ros-perception/vision_opencv.git
     version: humble
@@ -30,7 +34,7 @@ repositories:
   robot_localization:
     type: git
     url: https://github.com/cra-ros-pkg/robot_localization.git
-    version: ros2
+    version: humble-devel
   gazebo_ros_pkgs:
     type: git
     url: https://github.com/ros-simulation/gazebo_ros_pkgs.git

@@ -31,7 +31,3 @@ sudo apt install \
 
 mkdir -p src
 
-cd src
-git clone https://github.com/ros-planning/navigation2.git --branch humble
-
-vcs import --input deps.repos src
