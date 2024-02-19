@@ -1,0 +1,13 @@
+repositories:
+  turtlebot4:
+    type: git
+    url: https://github.com/turtlebot/turtlebot4.git
+    version: humble
+  turtlebot4_simulator:
+    type: git
+    url: https://github.com/turtlebot/turtlebot4_simulator.git
+    version: humble
+  turtlebot4_robot:
+    type: git
+    url: https://github.com/turtlebot/turtlebot4_robot.git
+    version: humble
