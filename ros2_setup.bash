@@ -3,11 +3,11 @@
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 source "$HOME/Projects/ros2_humble/install/local_setup.bash"
 
-# NAV2_SETUP="$HOME/Projects/nav2_ws/install/local_setup.bash"
-# if [ -f "$NAV2_SETUP" ]; then
-#     echo "nav2_ws"
-#     source "$NAV2_SETUP"
-# fi
+NAV2_SETUP="$HOME/Projects/nav2_ws/install/local_setup.bash"
+if [ -f "$NAV2_SETUP" ]; then
+    echo "nav2_ws"
+    source "$NAV2_SETUP"
+fi
 
 TB4_SETUP="$HOME/Projects/turtlebot4_ws/install/local_setup.bash"
 if [ -f "$TB4_SETUP" ]; then
