@@ -16,8 +16,6 @@ sudo apt install \
     python3-zmq \
     lcov \
     libceres-dev \
-    libgazebo-dev \
-    gazebo \
     python3-pyproj \
     python3-opencv \
     libgeographic-dev \
@@ -27,9 +25,13 @@ sudo apt install \
     python3-ntplib \
     libzmq3-dev \
     libboost-coroutine-dev \
-    libboost-coroutine1.74.0
+    libboost-coroutine1.74.0 \
+    # libgazebo-dev \
+    # gazebo
 
 mkdir -p src
 
 cd src
 git clone https://github.com/ros-planning/navigation2.git --branch humble
+
+vcs import --input deps.repos src
