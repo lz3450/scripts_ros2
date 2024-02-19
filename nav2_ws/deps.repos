@@ -14,7 +14,7 @@ repositories:
   BehaviorTree.CPP:
     type: git
     url: https://github.com/BehaviorTree/BehaviorTree.CPP.git
-    version: v3.8
+    version: 3.8.6
   diagnostic_updater:
     type: git
     url: https://github.com/ros/diagnostics.git
@@ -22,7 +22,7 @@ repositories:
   cv_bridge:
     type: git
     url: https://github.com/ros-perception/vision_opencv.git
-    version: iron
+    version: humble
   ompl:
     type: git
     url: https://github.com/ompl/ompl.git
