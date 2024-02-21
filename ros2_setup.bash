@@ -1,7 +1,11 @@
 #!/bin/bash
 
-export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
-source "$HOME/Projects/ros2_humble/install/local_setup.bash"
+ROS2_SETUP="$HOME/Projects/ros2_humble/install/local_setup.bash"
+if [ -f "$ROS2_SETUP" ]; then
+    export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+    echo "ros2_humble"
+    source "$ROS2_SETUP"
+fi
 
 NAV2_SETUP="$HOME/Projects/nav2_ws/install/local_setup.bash"
 if [ -f "$NAV2_SETUP" ]; then
