@@ -86,8 +86,12 @@ repositories:
   slam_toolbox:
     type: git
     url: https://github.com/SteveMacenski/slam_toolbox.git
-    version: 1.6.0
+    version: humble
   xacro:
     type: git
     url: https://github.com/ros/xacro.git
+    version: ros2
+  joint_state_publisher:
+    type: git
+    url: https://github.com/ros/joint_state_publisher.git
     version: ros2
