@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /etc/turtlebot4/setup.bash
+source ~/Projects/scripts_ros2/ros2_setup.bash
 
 trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
 

@@ -1,9 +1,7 @@
 #!/bin/bash
 
 
-if [ -z $ROS_DISTRO ]; then
-    source ~/Projects/scripts_ros2/ros2_setup.bash
-fi
+source ~/Projects/scripts_ros2/ros2_setup.bash
 
 trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
 
