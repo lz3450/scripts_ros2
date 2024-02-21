@@ -5,7 +5,7 @@ set -e
 sudo apt update
 sudo apt upgrade -y
 
-sudo apt install \
+sudo apt install -y \
     libopencv-dev  \
     python3-numpy  \
     python3-opencv  \
@@ -31,6 +31,7 @@ sudo apt install \
     libcwiid1  \
     libbluetooth-dev  \
     libcwiid-dev  \
-    python3-ntplib
+    python3-ntplib \
+    libgraphicsmagick++1-dev
 
 mkdir -p src
