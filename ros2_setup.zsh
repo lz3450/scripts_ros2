@@ -19,6 +19,14 @@ if [ -f "$TB4_SETUP" ]; then
     source "$TB4_SETUP"
 fi
 
+ROBOT_SETUP="/etc/turtlebot4/setup.bash"
+if [ -f "$ROBOT_SETUP" ]; then
+    echo "turtlebot4_setup"
+    export ROBOT_SETUP
+    # source "$ROBOT_SETUP"
+    source "/etc/turtlebot4/aliases.bash"
+fi
+
 WS_SETUP="$HOME/Projects/ros2_ws/install/local_setup.zsh"
 if [ -f "$WS_SETUP" ]; then
     echo "nav2_ws"
