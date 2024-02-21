@@ -55,3 +55,15 @@ repositories:
     type: git
     url: https://github.com/ros2/teleop_twist_joy.git
     version: humble
+  simple_term_menu_vendor:
+    type: git
+    url: https://github.com/clearpathrobotics/simple-term-menu.git
+    version: humble
+  robot_upstart:
+    type: git
+    url: https://github.com/clearpathrobotics/robot_upstart.git
+    version: foxy-devel
+  teleop_twist_keyboard:
+    type: git
+    url: https://github.com/ros2/teleop_twist_keyboard.git
+    version: dashing
