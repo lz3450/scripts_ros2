@@ -1,34 +1,32 @@
-#!/bin/bash
-
-ROS2_SETUP="$HOME/Projects/ros2_humble/install/local_setup.zsh"
+ROS2_SETUP="/home/kzl/Projects/ros2_humble/install/local_setup.zsh"
 if [ -f "$ROS2_SETUP" ]; then
     # export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
-    echo "ros2_humble"
+    echo "ros2_humble (zsh)"
     source "$ROS2_SETUP"
 fi
 
-NAV2_SETUP="$HOME/Projects/nav2_ws/install/local_setup.zsh"
+NAV2_SETUP="/home/kzl/Projects/nav2_ws/install/local_setup.zsh"
 if [ -f "$NAV2_SETUP" ]; then
-    echo "nav2_ws"
+    echo "nav2_ws (zsh)"
     source "$NAV2_SETUP"
 fi
 
-TB4_SETUP="$HOME/Projects/turtlebot4_ws/install/local_setup.zsh"
+TB4_SETUP="/home/kzl/Projects/turtlebot4_ws/install/local_setup.zsh"
 if [ -f "$TB4_SETUP" ]; then
-    echo "turtlebot4_ws"
+    echo "turtlebot4_ws (zsh)"
     source "$TB4_SETUP"
 fi
 
 ROBOT_SETUP="/etc/turtlebot4/setup.bash"
 if [ -f "$ROBOT_SETUP" ]; then
-    echo "turtlebot4_setup"
+    echo "turtlebot4_setup (zsh)"
     export ROBOT_SETUP
     # source "$ROBOT_SETUP"
     source "/etc/turtlebot4/aliases.bash"
 fi
 
-WS_SETUP="$HOME/Projects/ros2_ws/install/local_setup.zsh"
+WS_SETUP="/home/kzl/Projects/ros2_ws/install/local_setup.zsh"
 if [ -f "$WS_SETUP" ]; then
-    echo "nav2_ws"
+    echo "nav2_ws (zsh)"
     source "$WS_SETUP"
 fi
