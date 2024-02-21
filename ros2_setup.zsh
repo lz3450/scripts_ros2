@@ -2,7 +2,7 @@
 
 ROS2_SETUP="$HOME/Projects/ros2_humble/install/local_setup.zsh"
 if [ -f "$ROS2_SETUP" ]; then
-    export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+    # export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
     echo "ros2_humble"
     source "$ROS2_SETUP"
 fi
