@@ -5,7 +5,7 @@ set -e
 sudo apt update
 sudo apt upgrade -y
 
-sudo apt install \
+sudo apt install -y \
     uuid-dev \
     libboost-all-dev \
     libeigen3-dev \
